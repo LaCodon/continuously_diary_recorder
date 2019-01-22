@@ -1,0 +1,21 @@
+{
+  "version": "0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "9aa5b055e4",
+      "name": "entry",
+      "onEnter": [
+        "stageMessage {\"type\":\"{{state.type}}\",\"content\":\"{{event.text}}\"}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ]
+    }
+  ]
+}

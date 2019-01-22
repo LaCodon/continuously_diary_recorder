@@ -1,0 +1,29 @@
+{
+  "name": "continuously_diary_recorder",
+  "version": "1.0.0",
+  "description": "Support bot for continuously diary creation. This bot handles diary entries during the day.",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 8 < 11"
+  },
+  "dependencies": {
+    "@botpress/audience": "10.51.1",
+    "@botpress/builtins": "10.51.1",
+    "@botpress/channel-web": "10.51.1",
+    "@botpress/hitl": "10.51.1",
+    "@botpress/nlu": "10.51.1",
+    "@botpress/skill-choice": "10.51.1",
+    "botpress-channel-rocketchat": "^0.0.14",
+    "botpress": "10.51.1",
+    "jsdoc-api": "^4.0.3",
+    "lodash": "^4.17.10",
+    "yn": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "ghost-sync": "botpress ghost-sync",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian Maier",
+  "license": "AGPL-3.0-only"
+}

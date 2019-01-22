@@ -1,0 +1,156 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.text === 'reset()'",
+        "node": "reset"
+      }
+    ]
+  },
+  "startNode": "confidence_checker",
+  "nodes": [
+    {
+      "id": "f0c8456ad1",
+      "name": "got_availability",
+      "next": [
+        {
+          "condition": "true",
+          "node": "goto_stage"
+        }
+      ],
+      "onEnter": [
+        "setStateVariable {\"name\":\"type\",\"value\":\"message_availability\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "5b264b7622",
+      "name": "none",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-NDU1D3"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ab7d91c3bf",
+      "name": "confidence_checker",
+      "next": [
+        {
+          "condition": "event.nlu.intent.confidence > 0.5",
+          "node": "intent_router"
+        },
+        {
+          "condition": "true",
+          "node": "none"
+        }
+      ],
+      "onEnter": [
+        "debug {\"obj\":\"{{event.nlu.intent.name}}\"}",
+        "debug {\"obj\":\"{{event.nlu.intent.confidence}}\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "fb90383aae",
+      "name": "got_blocked",
+      "next": [
+        {
+          "condition": "true",
+          "node": "goto_stage"
+        }
+      ],
+      "onEnter": [
+        "setStateVariable {\"name\":\"type\",\"value\":\"message_blocked\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "8d998b3671",
+      "name": "got_planned",
+      "next": [
+        {
+          "condition": "true",
+          "node": "goto_stage"
+        }
+      ],
+      "onEnter": [
+        "setStateVariable {\"name\":\"type\",\"value\":\"message_planned\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "979ebc8f15",
+      "name": "got_done",
+      "next": [
+        {
+          "condition": "true",
+          "node": "goto_stage"
+        }
+      ],
+      "onEnter": [
+        "setStateVariable {\"name\":\"type\",\"value\":\"message_done\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "3c2e67d237",
+      "name": "intent_router",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'message_availability'",
+          "node": "got_availability"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'message_blocked'",
+          "node": "got_blocked"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'message_planned'",
+          "node": "got_planned"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'message_done'",
+          "node": "got_done"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'want_diary'",
+          "node": "send_diary"
+        },
+        {
+          "condition": "true",
+          "node": "none"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "9c7b58af96",
+      "name": "send_diary",
+      "next": [],
+      "onEnter": [
+        "getUserDiary {}",
+        "markdownDiary {}",
+        "say #!builtin_text-GjV1Kd"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "23a93e2030",
+      "name": "goto_stage",
+      "next": [
+        {
+          "condition": "true",
+          "node": "stage.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-liN_7H"
+      ],
+      "onReceive": null
+    }
+  ]
+}

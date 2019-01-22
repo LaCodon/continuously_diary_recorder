@@ -15,8 +15,6 @@ async function stageMessage(state, event, { type, content }) {
   newData[type].push(getMessageObj(moment(), content))
 
   await event.bp.kvs.set(getKvsKey(userId), newData)
-
-  return state
 }
 
 /**
@@ -42,7 +40,6 @@ async function markdownDiary(state, event, { }) {
   const types = Object.keys(data)
   for (let i = 0; i < types.length; i++) {
     const type = types[i]
-    console.log(type, data[type])
 
     output += '\n**' + type + '**\n'
     for (let n = 0; n < data[type].length; n++) {

@@ -1,13 +1,32 @@
-## Run bot
+## Prerequisites
 
-Run `npm start` to start your bot.
+* RASA NLU
+* Rocket.Chat
+* Node.js
+* yarn (somehow npm does not work for me)
 
-By default bot runs locally with web interface available at http://localhost:3000
+## Setup RASA
 
-## Deploy
+Basically, you can do what works best for you here but the following is my advice:
 
-Check [Heroku](https://botpress.io/docs/deploy/heroku/) and [AWS](https://botpress.io/docs/deploy/aws/) deploy tutorials to get started
+```docker run -v `pwd`/config.yml:/app/config.yml -p 5000:5000 rasa/rasa_nlu:latest-full```
 
-## Development
+with following config.yml:
 
-To learn more on how to work with [Botpress](https://botpress.io/) you can read [here](https://botpress.io/docs/getting_started/).
+```yaml
+language: "de"
+
+pipeline:
+ - name: "nlp_spacy"
+ - name: "tokenizer_spacy"
+ - name: "intent_featurizer_count_vectors"
+ - name: "intent_classifier_tensorflow_embedding"
+```
+
+## Install the bot
+
+Run `yarn install` to install the bot.
+
+## Run the bot
+
+The easiest way to run the bot is by executing ```./run.sh``` in the root folder. It will set some env vars for you. Make sure to adapt the run script according to your needs.

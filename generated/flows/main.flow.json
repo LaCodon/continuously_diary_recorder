@@ -4,20 +4,20 @@
     "onReceive": [],
     "next": [
       {
-        "condition": "event.text === 'reset()'",
-        "node": "reset"
+        "condition": "event.text === 'delete()'",
+        "node": "delete_diary"
       }
     ]
   },
   "startNode": "confidence_checker",
   "nodes": [
     {
-      "id": "f0c8456ad1",
+      "id": "a4b4c1f87e",
       "name": "got_availability",
       "next": [
         {
           "condition": "true",
-          "node": "goto_stage"
+          "node": "check_entity"
         }
       ],
       "onEnter": [
@@ -26,20 +26,26 @@
       "onReceive": null
     },
     {
-      "id": "5b264b7622",
+      "id": "51ced9ad4e",
       "name": "none",
-      "next": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "stage.flow.json"
+        }
+      ],
       "onEnter": [
-        "say #!builtin_text-NDU1D3"
+        "say #!builtin_text-NDU1D3",
+        "setStateVariable {\"name\":\"type\",\"value\":\"message_none\"}"
       ],
       "onReceive": null
     },
     {
-      "id": "ab7d91c3bf",
+      "id": "5889aabcb6",
       "name": "confidence_checker",
       "next": [
         {
-          "condition": "event.nlu.intent.confidence > 0.5",
+          "condition": "event.nlu.intent.confidence > 0.6",
           "node": "intent_router"
         },
         {
@@ -48,33 +54,17 @@
         }
       ],
       "onEnter": [
-        "debug {\"obj\":\"{{event.nlu.intent.name}}\"}",
-        "debug {\"obj\":\"{{event.nlu.intent.confidence}}\"}",
         "debug {\"obj\":\"\"}"
       ],
       "onReceive": null
     },
     {
-      "id": "fb90383aae",
-      "name": "got_blocked",
-      "next": [
-        {
-          "condition": "true",
-          "node": "goto_stage"
-        }
-      ],
-      "onEnter": [
-        "setStateVariable {\"name\":\"type\",\"value\":\"message_blocked\"}"
-      ],
-      "onReceive": null
-    },
-    {
-      "id": "8d998b3671",
+      "id": "fa72255c31",
       "name": "got_planned",
       "next": [
         {
           "condition": "true",
-          "node": "goto_stage"
+          "node": "check_entity"
         }
       ],
       "onEnter": [
@@ -83,12 +73,12 @@
       "onReceive": null
     },
     {
-      "id": "979ebc8f15",
+      "id": "33ce46b367",
       "name": "got_done",
       "next": [
         {
           "condition": "true",
-          "node": "goto_stage"
+          "node": "check_entity"
         }
       ],
       "onEnter": [
@@ -97,7 +87,7 @@
       "onReceive": null
     },
     {
-      "id": "9c7b58af96",
+      "id": "3db2ebcd14",
       "name": "send_diary",
       "next": [],
       "onEnter": [
@@ -108,7 +98,7 @@
       "onReceive": null
     },
     {
-      "id": "23a93e2030",
+      "id": "7b2309a164",
       "name": "goto_stage",
       "next": [
         {
@@ -122,7 +112,7 @@
       "onReceive": null
     },
     {
-      "id": "3c2e67d237",
+      "id": "96534a834a",
       "name": "intent_router",
       "next": [
         {
@@ -146,10 +136,6 @@
           "node": "send_diary"
         },
         {
-          "condition": "event.nlu.intent.name === 'status_update'",
-          "node": "status_update"
-        },
-        {
           "condition": "true",
           "node": "none"
         }
@@ -158,13 +144,61 @@
       "onReceive": null
     },
     {
-      "id": "6e8636de28",
-      "name": "status_update",
-      "next": [],
-      "onEnter": [
-        "getTypeByEntity {}",
-        "say #!builtin_text-liN_7H"
+      "id": "3347e34215",
+      "name": "delete_diary",
+      "next": [
+        {
+          "condition": "true",
+          "node": "send_diary"
+        }
       ],
+      "onEnter": [
+        "deleteDiary {}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "569056fe83",
+      "name": "got_entity",
+      "next": [
+        {
+          "condition": "true",
+          "node": "goto_stage"
+        }
+      ],
+      "onEnter": [
+        "setStateVariable {\"name\":\"type\",\"value\":\"{{event.nlu.entities.0.type}}\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "39f5d4fdcc",
+      "name": "got_blocked",
+      "next": [
+        {
+          "condition": "true",
+          "node": "check_entity"
+        }
+      ],
+      "onEnter": [
+        "setStateVariable {\"name\":\"type\",\"value\":\"message_blocked\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "9a368c31ec",
+      "name": "check_entity",
+      "next": [
+        {
+          "condition": "event.nlu.entities.length > 0 && event.nlu.intent.confidence < 0.9",
+          "node": "got_entity"
+        },
+        {
+          "condition": "true",
+          "node": "goto_stage"
+        }
+      ],
+      "onEnter": [],
       "onReceive": null
     }
   ]

@@ -1,22 +1,186 @@
-bin fertig mit
-habe gerade erledigt
-gewesen
-besprochen
-bearbeitet
-abgeschlossen
-durchgezogen
-gesendet
-ich hab
-geht wieder
-ich habe
+[wahrgenommen](message_done)
+[hab ich](message_done)
+[habe ich](message_done)
+[ich hab](message_done) heute
+[bin fertig](message_done) mit
+habe gerade [erledigt](message_done)
+[gewesen](message_done)
+[besprochen](message_done)
+[bearbeitet](message_done)
+[abgeschlossen](message_done)
+[durchgezogen](message_done)
+[gesendet](message_done)
+ich [hab](message_done)
+ich [habe](message_done)
 heute
-ich habe heute
-hab gesprochen
-ich habe weiter
-ich hab gemacht
-heute war ich beschäftigt
-ich habe teilgenommen
-heute war ich
-bis jetzt habe ich Issue geschlossen
-heute bearbeitet
-heute habe ich erledigt
+ich [habe heute](message_done)
+hab [gesprochen](message_done)
+ich [habe weiter](message_done)
+ich [hab gemacht](message_done)
+heute [war ich beschäftigt](message_done)
+ich [habe teilgenommen](message_done)
+heute [war ich](message_done)
+bis jetzt [habe ich](message_done) Issue [geschlossen](message_done)
+heute [bearbeitet](message_done)
+heute habe ich [erledigt](message_done)
+Akquisetermin für KD DB Regio [wahrgenommen](message_done)
+Vorgehen im Wiki [dokumentiert](message_done)
+#diary-bot-kundenbetreuung [angelegt](message_done), damit wir uns darüber austauschen können
+Ein paar Fixes am Tagebuch gemacht - und dabei das Kopieren als URL [kaputt gemacht](message_done)...
+einen Artikel für DB Planet [angepasst](message_done)
+Eine zusammenfassung zum Konfigurieren [geschrieben](message_done).
+Ein paar zusätzliche Kennzahlen per Skript [erfasst](message_done)
+Stundenerfassung und Freigabe [bearbeitet](message_done)
+Anfrage MSZ [bearbeitet](message_done): Nutzername des Agenten wird nach Release 7.0 bei der MSZ [angezeigt](message_done)
+Webhooks und Templates [angepasst](message_done) s. Trello
+Webhooks bei team, decs und dbs-common-services auf den aktuellen Stand [gebracht](message_done)
+Ich war im Review und [habe danach](message_done) eine Veranstaltung [vorbereitet](message_done) und [durchgeführt](message_done) (projektfremd)
+Nach dem Termin [habe ich](message_done) mit dem Rüdiger um den Livechat username issue [gekümmert](message_done).
+[ersucht](message_done), den Livechat-Refrehs-on-Agent-join-Bug zu fixen - bislang erfolglos
+Bot [gespielt](message_done)
+Räume gebucht und Einladung Jahresretro [versendet](message_done)
+Bugfix Release für LiveChat zusammen mit Vignesh [erstellt](message_done)
+Neu Live chat release [gemacht](message_done)
+Diary Bot [gespielt](message_done)
+Weihnachtsgedicht Assistify [geschrieben](message_done)
+Spass mit SpringBoot, Html5 und Css [gehabt](message_done)
+Mit dem Sprachendienst [abgesprochen](message_done), was wir DB Netz anbieten können
+In Erfahrung [gebracht](message_done), wie man zu einem Eintrag in BEAM kommt
+Mit Joachim Bot für die Tagebuch-Teams [gespielt](message_done)
+User Mentions im Tagebuch [hinzugefügt](message_done)
+Lange Tag-Inhalte [erscheinen jetzt](message_done) erst beim Hovern
+Weihnachtsgedicht auf DB Planet [gestellt](message_done)
+Matthias wegen Weihnachtsfeier [gefragt](message_done)
+Joachim bei allem moeglichen [unterstützt](message_done)
+Mit ruediger [heute morgen](message_done) Tagebücher [zusammen gestellt](message_done)
+Mit Steffi heute Nachmittag Tagebuch-Benachrichtigungen [versendet](message_done)
+ThomasR [kann jetzt](message_done) operations benutzen
+Fehler in der Benachrichtigungsfunktion [entfernt](message_done)
+Tagebuch fehlertoleranter [gemacht](message_done)
+Setzen der Berechtigungen [vorbereitet](message_done)
+hatte live-chat für die Release 0.70.4 [getestet](message_done)
+Eine PR für merge nach master [erstellt](message_done)
+GF-Bericht [geschrieben](message_done)
+Versucht zu analysieren, wie wir Push-Notifications [hin bekommen](message_done). Leider dabei an Limitierungen unseres aktuellen Clusters [gescheitert](message_done)
+Smarti-in-Rocket.Chat so [angepasst](message_done), dass Analysen deutlich seltener angefordert werden
+Mailentwurf zu Waiting for Feedback [hinzugefügt](message_done)
+Retros [angeschaut](message_done)
+Escape Room [reserviert](message_done) | Bei Spanier [angefragt](message_done)
+Assistify Admin Nachricht an alle Test-Team User [gesendet](message_done)
+Smarti auf allen Mandanten [überprüft](message_done)
+Bot [gespielt](message_done)
+SpringBoot und Frontend Tutorials [durchgearbeitet](message_done)
+Größere Instanzen für Smarti [gebucht](message_done)
+zusammen mit Joachim auf Daily summary application URL refresh [angeguckt](message_done)
+Neu Live chat Bug fix release [gemacht](message_done)
+URL des DiaryEditors wird jetzt zuverlässig [aktualisiert](message_done)
+Aufsetzen eines neuen Mandanten setzt nun auch das Recht pin-messages - analog dem Menüpunkt in der Oberfläche
+Webhook für die Fragen [aufgeteilt](message_done) für öffentliche und private Räume
+Analyse des Bild-Upload-Problems im Zshg. mit dem Proxy [erstellt](message_done)
+Operations lokal [aufgesetzt](message_done)
+Smarti-Bot [gespielt](message_done)
+Tagebuch-Tests [ergänzt](message_done)
+Tagebuch-Bot [gespielt](message_done)
+BEAM-Eintrag für Assistify [erstellt](message_done)
+Akquise Gespräch DB Vertrieb / B2B [geführt](message_done)
+Webhooks für SmartiBot weiter [angepasst](message_done)
+Ein paar CustomerQuestions [kategorisiert](message_done)
+Von Oliver das Testcafe [zeigen lassen](message_done)
+Neuer K8s Cluster [erzeugt](message_done) - Team Chat läuft immerhin jetzt
+Neuer k8s Cluster erzeugt - Team Chat [reaktiviert](message_done)
+ruediger kann jetzt auf den Cluster per Dashboard [zugreifen](message_done)
+Noch einen PR in diary [angelegt](message_done) - aber nichts dringendes. UI-Tests haben noch ein Problem
+Ein Helm Chart für das Traefik-Dashboard [angelegt](message_done)
+Auf der Couch gelegen und gar [nichts getan](message_done)
+Tagebuch zusammen [erstellt](message_done)
+Team Chat auf dem neuen Cluster ans fliegen [gebracht](message_done)
+Team Chat über das Internet erreichbar [gemacht](message_done)
+Lokale Konfig für den Zugriff aufs neue Cluster [angepasst](message_done)
+ADV Stunden gebucht, freigegeben und eine Übersicht [erstellt](message_done)
+Mit Fabian seine Zwischenergebnisse, Praxisbericht und Bachelor-Thesis-Ideen [besprochen](message_done)
+Trafic in unserem Cluster auf zwei Pods [reduziert](message_done)
+[Angefangen](message_done), Threading zu contributen
+Folgebeauftragung Redlink 2019 [sichergestellt](message_done)
+Beam Eintrag [erstellt](message_done)
+[Nachgehakt](message_done) wegen Verrechnung MSZ
+Smarti 0.8.0 [getestet](message_done)
+Operations-repo um git secrets [erweitert](message_done)
+mit dem Merge von 0.73.2 [angefangen](message_done)
+Bestellung einfachbahn im Digitalportal [bestätigt](message_done)
+Dokumentation Schnittstelle Assistify <-> Digitalportal [erstellt](message_done)
+Github issues [aufgeräumt](message_done)
+RC Probleme mit SEEC [geklärt](message_done)
+Ideen [dokumentiert](message_done)
+Support Vendo: Alle User in einen öffentlichen Kanal [eingeladen](message_done)
+Projektleiter zur Unterstützung bei DB Netz (Simultan-Übersetzung) [gefunden](message_done) und [gebrieft](message_done)
+Zusammen mit Vignesh Tagebuch [erstellt](message_done)
+Verrechnung Vendo mit Jochen Würges weiter [gebracht](message_done)
+Anforderung für Benachrichtigung direkt nach Assistify-Bestellungen beim Digitalportal [eingekippt](message_done)
+Christoph Mischlich (AM SNOW) wg. Teilnahme am Tagebuch [angeschrieben](message_done)
+Mit der Farbe der Scrollbar [rumgespielt](message_done)
+Tagebuch-Benachrichtigungen [versendet](message_done)
+[Kontrolliert](message_done), ob noch 500er Fehler auftreten (nein)
+Kontakte [angesprochen](message_done) wg. Tagebuch-Test
+Tagebuch-Erinnerungen [versendet](message_done)
+Daily Einladung und Webex auf 10:00 Uhr [verschoben](message_done)
+Grünes Board mit Joachim in Wekan [überführt](message_done)
+Digitalportal-Themen liegen nun beim Digitalportal
+ich hab den Botpress Container für den One-Click-Start [bereit gemacht](message_done)
+ich hab an der Arbeit weiter [geschrieben](message_done)
+Brainstorming Tagebuch-Features [durchgeführt](message_done)
+Termine mit AIs und AMs wg. Tagebuch-Vertrieb [ausgemacht](message_done)
+Protokoll zu den Ergebnissen des Brainstorming [erstellt](message_done) als Wikiseite
+Unsere Landingpage statisch [abgezogen](message_done)
+mit Thorsten Staus [gesprochen](message_done)
+Zwei der einfachen Änderungen am Tagebuch-UI [umgesetzt](message_done) (DM & "keine Info")
+Die Daten in Botpress werden jetzt ordentlich (eine Zeile pro Datensatz) gespeichert und auch wieder richtig [angezeigt](message_done), das scheduling geht auch wieder
+Ich hab RASA zum laufen [gebracht](message_done) und ein bisschen damit [rumgespielt](message_done)
+Tagebuch-CRM [aktualisiert](message_done) und Infos aus Wiki-Seite [übernommen](message_done)
+Kommunikation mit SEEC bzgl. CORS auf S3
+Support-Anfragen [bearbeitet](message_done)
+Tagebuch-Vertrieb: Till Moritz [angesprochen](message_done)
+Assistify Organisation auf npmjs.org [eingerichtet](message_done)
+Probeweise eine RC-API dort [eingerichtet](message_done)
+Ewig am JSON Schema Test [geackert](message_done) aber jetzt klappt’s!
+Tagebuch-Erinnerungen [gesendet](message_done)
+Endlich mal die lustige Security-Schulung [durchgezogen](message_done)
+Mit Joachim die Architektur des Tagebuch-Backends [besprochen](message_done)
+mit Fabian den kontinuierlichen Zuhörer-Bot [besprochen](message_done)
+Fabians Arbeit [gelesen](message_done)
+Akquise Tagebuch bei searchid [durchgeführt](message_done)
+Instanz für Non-Assistify Tagebuch-Interessenten [aufgesetzt](message_done)
+Review Artikel auf DB Planet und im Wiki [geschrieben](message_done)
+[versucht](message_done) alle Beauftrager zu erreichen.
+Mit Cops Feedback Termin [vereinbart](message_done)
+Textverbesserungen von Oliver [umgesetzt](message_done)
+Mails an Leute [geschrieben](message_done) wegen einer potentiellen Übernahme und meiner Thesis
+[Versucht](message_done), RASA beizubringen mich zu verstehen
+Tagebücher [erstellt](message_done)
+Mit Oliver das operations Tool auf dem K8s zum Laufen [gebracht](message_done)
+Tagebuch-Parser in eigenes Modul [ausgelagert](message_done)
+Fehler bei der Ausgabe der aktuellen Tagebuch-Info als Text im Editor [korrigiert](message_done)
+Für jedes Tagebuch-Team eine eigene Konfigurationsdatei [angelegt](message_done)
+mit Joachim das Operations-Tool auf unseren Kubernetes-Cluster [gebracht](message_done)
+Mich an CD [versucht](message_done): Noch kein Erfolg
+Mandanten für dbux und dbst-it-bf [konfiguriert](message_done) und [ausgeliefert](message_done)
+Umstellung des Mandanten gamify zu open [erledigt](message_done)
+Agile Übungen des Tages [aufbereitet](message_done)
+Restliche Termine für Feedback-Telkos [organisiert](message_done)
+Akquise Nachricht über DB Planet, Assistify News und in einigen MS Teams Kanälen [verteilt](message_done)
+Hab den anderen mein RASA Ding [gezeigt](message_done)
+Hab weiter [versucht](message_done), mit Olivers Ansatz zu experimentieren
+Die API [ist fertig](message_done)
+Hab mir zwei Hilfstools [geschrieben](message_done)
+[Ich hab](message_done) mal ein paar alte Tagbucheinträge unseres Teams [genommen](message_done) und damit [trainiert](message_done)
+Von drei Teams Feedback eingesammelt und im Wiki [dokumentiert](message_done)
+Aufgeteilte Team-Konfigurationen sind [abgeschlossen](message_done)
+Webhook mit Antwort-Template wird jetzt über operations [ausgerollt](message_done) (nicht mehr manuell angelegt wie bisher)
+Continuous delivery mit Keel [umgesetzt](message_done) - sieht erst einmal ganz gut aus, muss aber noch validiert werden
+Operations Repository mit Keepass-Secret und Umgebungsvariablen [versorgt](message_done)
+Tagebuch-Setup (Team und Members) für searchid [gemacht](message_done)
+meinen neuen Chef kennen [gelernt](message_done)
+Erfahrungsbericht Assistify im Skyview [gegeben](message_done)
+Verschiedene Tagebuch Akquise Gespräche [geführt](message_done)
+Feebackrunden mit den 3 Test-Teams [durchgeführt](message_done)
+Kaltakquise für das Tagebuch [gemacht](message_done)
+Meinen ersten PR [gemerged](message_done)

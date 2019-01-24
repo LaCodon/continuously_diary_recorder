@@ -1,21 +1,112 @@
-ich will noch
-muss noch
-weiter machen
-mal sehen
-zu ende bringen
-morgen werde ich
-ich werde
-issue anfangen
+ich [muss noch](message_planned)
+ich [will noch](message_planned)
+[heute will ich noch](message_planned)
+[morgen möchte ich](message_planned) schaffen
+[danach will ich](message_planned)
+[ich werde](message_planned) planen
+[ich will](message_planned) eine Lösung finden
+[ich will](message_planned) eine Lösung finden
+[morgen habe ich](message_planned) vor
+jetzt [will ich](message_planned)
+[ich will](message_planned) als nächstes
+[ich plane](message_planned)
 morgen
-ich plane
-ich will als nächstes
-jetzt will ich
-es ist geplant
-morgen habe ich vor
-ich will eine Lösung finden
-an issue weiterarbeiten
-teilnehmen
-ich werde planen
-bin ich mit beschäftigt
-danach will ich
-morgen möchte ich schaffen
+issue [anfangen](message_planned)
+[ich werde](message_planned)
+[morgen werde](message_planned) ich
+[zu ende bringen](message_planned)
+mal sehen
+[weiter machen](message_planned)
+[muss noch](message_planned)
+[ich will](message_planned) noch
+[ich muss](message_planned) morgen
+machen [heute noch](message_planned)
+[planen](message_planned)
+[endlich mal](message_planned) wieder ein Sprint Ticket fertigbekommen
+[jetzt will ich](message_planned) noch bessere Trainingsdaten für RASA erzeugen, um die Trefferquote deutlich zu erhöhen
+ich [muss morgen](message_planned) endlich meinen Schluss schreiben
+E-Mails und sonstige Nachrichten [sichten](message_planned)
+mich auf den neuesten Stand [bringen](message_planned)
+Bugs im Tagebuch [fixen](message_planned)
+Livechat-Alias [anschauen](message_planned)
+[Ich werde](message_planned) an der Retro und am Planning [teilnehmen](message_planned)
+Thomas und Oliver in die Lage [versetzen](message_planned), operations zu [benutzen](message_planned)
+Urlaub [machen](message_planned)
+Bot [weiterspielen](message_planned) und Tagebuch [erstellen](message_planned)
+Weihnachtsevent [weiter planen](message_planned)
+Weihnachts-Mail [formulieren](message_planned)
+Was spassiges [tun](message_planned)
+Bot Tagebuch fuer decs und uns [machen](message_planned)
+Ein verdammtes Team für das Tagebuch [begeistern](message_planned)
+Mittagessen mit Tom Winter wg. MT [planen](message_planned)
+Noch nichts [geplant](message_planned)
+Thomas in die Lage [versetzen](message_planned), operations zu [nutzen](message_planned), um Webhooks auszurollen
+Event [planen](message_planned)
+Jahresretro [vorbereiten](message_planned)
+KI Workshop machen oder weiter mit Java und Frontend Zeugs [arbeiten](message_planned)
+Auf den Spinner Workshop zum Thema "Information Veracity" [gehen](message_planned)
+Diary Bot Benachrichtigungen [automatisieren](message_planned)
+Weihnachtsmail [senden](message_planned)
+Bot [spielen](message_planned)
+Neue Retromethoden [recherchieren](message_planned)
+Bot [Spielen](message_planned)
+Unseren Cluster [umziehen](message_planned)
+Threading-PR in RC [aktualisieren](message_planned)
+Einen schönen letzten tag vor dem Urlaub [haben](message_planned)
+Termin mit Till [wahrnehmen](message_planned)
+[Mail versenden](message_planned) an Fachadmins
+letzter Tag -> [Abschliessen](message_planned) was noch offen ist
+Smarti Bot [spielen](message_planned)
+[Prepare](message_planned) nächstes Release
+Die Antwort-Konvertierung in den DiaryEditor [integrieren](message_planned) - oder irgendwas anderes sinnvolles.
+Den Fix für Smarti noch einmal [verändern](message_planned) - eigenes Streaming-Event
+Auf den neuen Cluster [umziehen](message_planned)
+Spaß [haben](message_planned)
+Die Experimente [abschließen](message_planned)
+Zugriff auf den Team-Chat auch ohne VPN [bekommen](message_planned)
+Clean-up vor dem Urlaub [durchführen](message_planned)
+Urlaub [machen](message_planned)
+Threading downport [anpassen](message_planned)
+Smarti auf dem neuen Cluster ans Laufen [bringen](message_planned), ggf. mit Version  0.8.0
+Security-Webinar [besuchen](message_planned)
+Tagebuch Bot [spielen](message_planned)
+Teams für Tagebuch [akquirieren](message_planned)
+noch kein Plan
+Issues im Milestone q1-2019 [durchgehen](message_planned)
+[Schauen](message_planned), was bei RC so ansteht
+Bin mit dem zusammenstellen der Tagebücher dran
+[Berücksichtigen](message_planned) von Abwesenheitszeiten auch im Tagebuch selbst
+Automatische Übernahme von gesendeten Texten ins Tagebuch [programmieren](message_planned)
+Über die AIs die AMs [erreichen](message_planned) und für das Tagebuch [werben](message_planned)
+Persönliche Kontakte [nutzen](message_planned) für Tagebuch-Werbung
+Kommunikation zum Tagebuch über Kanäle [streuen](message_planned)
+Mandant für DB Systemtechnik aufbauen und [konfigurieren](message_planned)
+Tagebuch CRM [anfangen](message_planned) abzuarbeiten
+Nutzerantworten an den Bot jeweils in einer eigenen DB Zeile [speichern](message_planned)
+RASA NLU [testen](message_planned)
+bekannte limits von Botpress [formulieren](message_planned)
+Arbeit fertig [schreiben](message_planned)
+Kleinere Änderungen an der "Tagebuch-Technik" [durchführen](message_planned)
+Feedback Telko mit den bestehenden Teams [vorbereiten](message_planned)
+Mit Joachim über die Architektur des Tagebuch-Backend-Teils [sprechen](message_planned)
+an diary issue #40 [arbeiten](message_planned)
+dafür zunächst RASA mit Botpress [verbinden](message_planned) und dann meine bisherigen Trainingsdaten [einfüttern](message_planned), mal gucken was dabei rumkommt
+Aufteilen der Team-Konfiguration [zu Ende bringen](message_planned)
+operations in den Cluster [bringen](message_planned)
+mit Joachim das Tagebuch-Backend [aufsetzen](message_planned)
+dann [mal sehen](message_planned)
+Artikel [raus hauen](message_planned)
+Feddback TelKos [weitermachen](message_planned)
+Agile Methoden [raus suchen](message_planned)
+Noch bessere Trainingsdaten für RASA [erzeugen](message_planned)
+Der Schluss für meine Arbeit [schreiben](message_planned)
+Meine PRs [mergen](message_planned)
+Das CD hin [bekommen](message_planned)
+Feedback Termin [ausmachen](message_planned)
+Weiterhin Akquise [erledigen](message_planned)
+Auf dem Board [gucken](message_planned), was ich noch übernehmen kann
+NLU mit realen Einträgen unseres Teams [anlernen](message_planned) und dann [testen](message_planned)
+das ganze dann auch mit der tensorflow pipeline [testen](message_planned)
+Für das Tagebuch [werben](message_planned)
+Kundentermin mit KD DB Regio (9-11) [wahrnehmen](message_planned)
+Kontakt mit Content Team [aufnehmen](message_planned)

@@ -1,23 +1,85 @@
-nicht im daily
-verfügbar
-ich werde im Büro sein
-ich werde abwesend sein
-ich werde im Urlaub sein
-ich werde zu hause sein
-morgen habe ich frei
-morgen habe ich urlaub
-da habe ich urlaub
-nachmittags bin ich nicht anwesend
-nachmittags bin ich weg
-nachmittags bin ich abwesend
-nachmittags bin ich nicht da
-ich bin im Silberturm
-ich bin im büro
-ich bin im urlaub
-ich bin im HO
-ich bin im Homeoffice
-morgen bin ich im büro
-morgen bin ich im HO
-morgen bin ich im Homeoffice
-morgen bin ich im Silberturm
-morgen bin ich im Silvertower
+ich [bin heute](message_availability) weg
+ich [bin weg](message_availability)
+nicht [im daily](message_availability)
+[verfügbar](message_availability)
+ich werde [im Büro](message_availability) sein
+ich werde [abwesend](message_availability) sein
+ich werde [im Urlaub](message_availability) sein
+ich werde [zu hause](message_availability) sein
+morgen [habe ich frei](message_availability)
+morgen [habe ich urlaub](message_availability)
+da [habe ich urlaub](message_availability)
+nachmittags bin ich nicht [anwesend](message_availability)
+nachmittags [bin ich weg](message_availability)
+nachmittags [bin ich abwesend](message_availability)
+nachmittags bin [ich nicht da](message_availability)
+ich bin [im Silberturm](message_availability)
+ich bin [im büro](message_availability)
+ich bin [im urlaub](message_availability)
+ich bin [im HO](message_availability)
+ich bin [im Homeoffice](message_availability)
+morgen bin ich [im büro](message_availability)
+morgen bin ich [im HO](message_availability)
+morgen bin ich [im Homeoffice](message_availability)
+morgen bin ich [im Silberturm](message_availability)
+morgen bin ich [im Silvertower](message_availability)
+In ca. 3 Wochen wieder [im Turm](message_availability)
+ab Mittag: [Silberturm](message_availability)
+Turm
+Erfurt Schlachthof
+@maintal
+Arbeite von [zu Hause](message_availability) und bin bis max. 13:30 Uhr erreichbar
+zwischen 10-12 verschiedene Kleinigkeiten
+[Home Office](message_availability)
+im Siblerturm
+bin morgen [zu Hause](message_availability)
+ich bin [morgen nicht da](message_availability)
+ich bin heute [nachmittag weg](message_availability)
+[Silberturm](message_availability), nicht [im Daily](message_availability), [verfügbar](message_availability) ab 14:00
+ich bin [im ho](message_availability)
+morgen bin ich den ganzen Tag [im Büro](message_availability)
+ich bin morgen den ganzen Tag [im Büro](message_availability)
+[Im Büro](message_availability) bis 12:45 - und dann am Abend wieder
+[Im Büro](message_availability); nicht [im Daily](message_availability); nicht im Review
+[Im Büro ](message_availability)
+remote ab 9:30 [im Office](message_availability) ab 10:00
+[im Silberturm](message_availability)
+[Im Büro](message_availability) bis 13:00
+[im Büro](message_availability)
+Ich bin [im Turm](message_availability)
+[im Office](message_availability) ab 9:00 Uhr
+[Im Büro](message_availability)
+[SIlberturm](message_availability)
+externer Termin um 10:30-12:00
+Verabredung zum Mittagessen um 12:30
+externer Termin um 15:00
+[Urlaub bis](message_availability) 10.12.
+[Silberturm](message_availability)
+[Im Office](message_availability)
+[Urlaub](message_availability) (Mi-Fr)
+[Im Silberturm](message_availability)
+Silberturm, aber ich wollte heute wieder mal mehr schreiben, damit ich sehen kann, wie das mit den langen Tag-Texten am Ende raus kommt
+[Im Urlaub](message_availability)
+Auf dem Weg [nach Berlin](message_availability)
+Silberturm, bin aber nicht [beim Daily](message_availability) wegen Brandschutz Termin
+[nicht da](message_availability)
+Büro
+Büro bis 13:00
+von [zu Hause](message_availability)
+Urlaub
+Home-Office
+Homeoffice bis 14:00
+[zu Hause](message_availability) - ich hatte doch noch Urlaub
+[zu Hause](message_availability)
+@[Homeoffice](message_availability)
+In FFM [Silberturm](message_availability)
+[im Homeoffice](message_availability) (hab eine Einladung zur Webex von Rüdiger)
+In Frankfurt vormittags - danach [im HO](message_availability)
+Ich bin leider nicht [im Daily](message_availability) dabei
+Homeoffice
+[im Silberturm](message_availability); ich plane ab neun da zu sein, falls ich doch erst Montag nach FFM fahre, schreib ich nochmal
+[Im Büro](message_availability) bis 15:00
+in FFM
+[im Turm](message_availability)
+In FFM
+Silberturm, nicht im Daily

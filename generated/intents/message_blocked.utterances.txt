@@ -1,11 +1,23 @@
-hänge an
+[kann nicht](message_blocked)
+[komme nicht weiter](message_blocked) beim CI/CD
+[hänge an](message_blocked) Keel
+ich brauche bei RASA noch unbedingt [hilfe von](message_blocked) einem Kollegen
+[Hilfe beim](message_blocked) Ziehen von Docker Images aus private Repos
+[ich weiß nicht](message_blocked), wie ich weiter machen soll
+Joachim muss mir [dabei helfen](message_blocked)
+ich [brauche Hilfe](message_blocked) beim finden eines Themas für meine Bachelorarbeit
+VPN
+Versenden des Infopakets an Martin Respondek (was?)
+[Hilfe beim](message_blocked) Ziehen von Docker Images aus private Repos.
+ich [weiß nicht](message_blocked)
+[hänge an](message_blocked)
 hilfe
-mir jemand weiterhelfen
-ich komme nicht weiter
-ich brauche unterstüzung
-jemand mir helfen
-mir helfen
-blockiert mich
-unterstützung
-ich brauche hilfe
-ich habe keine ahnung
+mir [jemand weiterhelfen](message_blocked)
+ich [komme nicht weiter](message_blocked)
+ich [brauche unterstüzung](message_blocked)
+jemand [mir helfen](message_blocked)
+[mir helfen](message_blocked)
+[blockiert mich](message_blocked)
+[unterstützung](message_blocked)
+ich [brauche hilfe](message_blocked)
+ich habe [keine ahnung](message_blocked)

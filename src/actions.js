@@ -12,6 +12,7 @@ async function stageMessage(state, event, { type, content }) {
   let newData = {
     ...oldData
   }
+
   newData[type].push(getMessageObj(moment(), content))
 
   await event.bp.kvs.set(getKvsKey(userId), newData)
@@ -27,6 +28,14 @@ async function getUserDiary(state, event, { }) {
     ...state,
     diary: currentData
   }
+}
+
+/**
+ * Delete the current diary
+ */
+async function deleteDiary(state, event, { }) {
+  const userId = event.user.id
+  await event.bp.kvs.set(getKvsKey(userId), getEmptyUserObj())
 }
 
 /**
@@ -79,7 +88,8 @@ function getEmptyUserObj() {
     message_planned: [],
     message_done: [],
     message_blocked: [],
-    message_availability: []
+    message_availability: [],
+    message_none: []
   }
 }
 
@@ -133,4 +143,4 @@ async function getTypeByEntity(state, event, { }) {
   }
 }
 
-module.exports = { stageMessage, setStateVariable, getUserDiary, markdownDiary, debug, getTypeByEntity, getKvsKey, getEmptyUserObj, getKnownUsers }
+module.exports = { stageMessage, setStateVariable, getUserDiary, markdownDiary, debug, getTypeByEntity, getKvsKey, getEmptyUserObj, getKnownUsers, deleteDiary }

@@ -6,6 +6,8 @@ const {
 } = require('@botpress/builtins')
 
 const registerCustom = require('./custom')
+const moment = require('moment')
+const customActions = require('./actions')
 
 module.exports = async bp => {
   // This bot template includes a couple of built-in elements and actions
@@ -48,6 +50,30 @@ module.exports = async bp => {
   // All events that should be processed by the Flow Manager
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
     bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()
+  })
+
+  bp.getRouter('botpress-diary', { auth: false }).get('/', async (req, res) => {
+    res.send(JSON.stringify(await customActions.getKnownUsers(bp)))
+  })
+
+  bp.getRouter('botpress-diary', { auth: false }).get('/:user', async (req, res) => {
+    const userId = req.params.user
+    const sentAfter = req.query.sentAfter || null
+
+    let data = await bp.kvs.get(customActions.getKvsKey(userId)) || customActions.getEmptyUserObj();
+
+    if (sentAfter !== null) {
+      const types = Object.keys(data)
+      const ts = moment(sentAfter)
+
+      for (let i = 0; i < types.length; i++) {
+        const type = types[i]
+        data[type] = data[type].filter(obj => ts.isBefore(moment(obj.ts)))
+      }
+    }
+
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(data))
   })
 }
 

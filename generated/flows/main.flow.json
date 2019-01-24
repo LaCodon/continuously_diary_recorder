@@ -49,7 +49,8 @@
       ],
       "onEnter": [
         "debug {\"obj\":\"{{event.nlu.intent.name}}\"}",
-        "debug {\"obj\":\"{{event.nlu.intent.confidence}}\"}"
+        "debug {\"obj\":\"{{event.nlu.intent.confidence}}\"}",
+        "debug {\"obj\":\"\"}"
       ],
       "onReceive": null
     },
@@ -96,6 +97,31 @@
       "onReceive": null
     },
     {
+      "id": "9c7b58af96",
+      "name": "send_diary",
+      "next": [],
+      "onEnter": [
+        "getUserDiary {}",
+        "markdownDiary {}",
+        "say #!builtin_text-GjV1Kd"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "23a93e2030",
+      "name": "goto_stage",
+      "next": [
+        {
+          "condition": "true",
+          "node": "stage.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-liN_7H"
+      ],
+      "onReceive": null
+    },
+    {
       "id": "3c2e67d237",
       "name": "intent_router",
       "next": [
@@ -120,6 +146,10 @@
           "node": "send_diary"
         },
         {
+          "condition": "event.nlu.intent.name === 'status_update'",
+          "node": "status_update"
+        },
+        {
           "condition": "true",
           "node": "none"
         }
@@ -128,26 +158,11 @@
       "onReceive": null
     },
     {
-      "id": "9c7b58af96",
-      "name": "send_diary",
+      "id": "6e8636de28",
+      "name": "status_update",
       "next": [],
       "onEnter": [
-        "getUserDiary {}",
-        "markdownDiary {}",
-        "say #!builtin_text-GjV1Kd"
-      ],
-      "onReceive": null
-    },
-    {
-      "id": "23a93e2030",
-      "name": "goto_stage",
-      "next": [
-        {
-          "condition": "true",
-          "node": "stage.flow.json"
-        }
-      ],
-      "onEnter": [
+        "getTypeByEntity {}",
         "say #!builtin_text-liN_7H"
       ],
       "onReceive": null

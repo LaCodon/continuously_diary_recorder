@@ -54,7 +54,24 @@ async function markdownDiary(state, event, { }) {
 }
 
 function getKvsKey(userId) {
+  if (userId === undefined)
+    userId = ''
+
   return `stagedata/${userId}`
+}
+
+async function getKnownUsers(bp) {
+  const knex = await bp.db.get()
+  const ids = await knex('kvs').select('key').where('key', 'like', `%${getKvsKey()}%`)
+    .then(res => {
+      let ids = [];
+      for (let i = 0; i < res.length; i++) {
+        let id = res[i].key.replace(getKvsKey(), '')
+        ids.push(id)
+      }
+      return ids
+    })
+  return ids
 }
 
 function getEmptyUserObj() {
@@ -85,4 +102,35 @@ async function setStateVariable(state, event, { name, value }) {
   }
 }
 
-module.exports = { stageMessage, setStateVariable, getUserDiary, markdownDiary }
+/**
+ * Output current state or given var
+ * @param {string} params.obj The var to be printed
+ */
+async function debug(state, event, { obj }) {
+  if (obj === undefined || !obj) {
+    console.log('debug: ', state)
+    console.log(event.nlu)
+  } else {
+    console.log('debug_obj:')
+    console.log(obj)
+  }
+}
+
+/**
+ * Get the message type by its recognized entities
+ */
+async function getTypeByEntity(state, event, { }) {
+  let type = event.nlu.intent.name || null
+  const entities = event.nlu.entities || []
+
+  if (entities.length > 0) {
+    type = entities[0].type
+  }
+
+  return {
+    ...state,
+    type: type
+  }
+}
+
+module.exports = { stageMessage, setStateVariable, getUserDiary, markdownDiary, debug, getTypeByEntity, getKvsKey, getEmptyUserObj, getKnownUsers }

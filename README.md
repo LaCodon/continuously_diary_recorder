@@ -41,7 +41,7 @@ Run `yarn install` to install the bot.
 
 The easiest way to run the bot is by executing ```./run.sh``` in the root folder. It will set some env vars for you. Make sure to adapt the run script according to your needs.
 
-After the first start you have to train the NLU once via the Botpress GUI (default on localhost:4000). Goto NLU > Sync Model
+After the first start you have to train the NLU once via the Botpress GUI (default on localhost:4000). Goto NLU > Sync Model. Then restart the bot.
 
 ## API
 

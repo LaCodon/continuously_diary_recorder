@@ -1,3 +1,5 @@
+# Make it fly
+
 ## Prerequisites
 
 * RASA NLU
@@ -25,6 +27,12 @@ pipeline:
  - name: "intent_classifier_tensorflow_embedding"
 ```
 
+**Update:** Lastly, I had better recognition results with the tensorflow pipeline. To use this, start RASA like that (no further config required):
+
+```docker run -p 5000:5000 rasa/rasa_nlu:latest-tensorflow```
+
+**Important:** The tensorflow pipeline is per default non deterministic. This results in slighlty different training results each time you retrain the network. See https://rasa.com/docs/nlu/components/#intent-classifier-tensorflow-embedding for more information, search for ```random_seed```.
+
 ## Install the bot
 
 Run `yarn install` to install the bot.
@@ -41,3 +49,7 @@ The Bot offers an API to get the collected data:
 
 - ```GET /api/botpress-diary``` List IDs of users who sent data
 - ```GET /api/botpress-diary/:userId?[sentAfter=2019-01-23T10:16:46.044Z]``` List the data and optionally filter for messages newer than a given date
+
+# Getting started with Botpress
+
+The best explanation for Botpress can be found on [their website](https://botpress.io/docs/10.50/getting_started/trivia_flows/).

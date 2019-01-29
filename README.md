@@ -51,6 +51,8 @@ Run the image: ```docker run --rm -p 4000:4000 -e ROCKETCHAT_URL=http://10.0.2.1
 
 You should adapt all environment variables to meet your requirements. For all available environment variables, have a look into the ```run-dev.sh``` script.
 
+The container will automatically train your RASA model on startup. You should think about mounting the ```/generated/intents/``` directory to your host system to persist changes in your traingset.
+
 ## API
 
 The Bot offers an API to get the collected data:
@@ -61,6 +63,16 @@ The Bot offers an API to get the collected data:
 # Getting started with Botpress
 
 The best explanation for Botpress can be found on [their website](https://botpress.io/docs/10.50/getting_started/trivia_flows/).
+
+# Adapting the RASA trainingsset
+
+All intents and utterances are stored under ```/generated/intents/```. The filename defines the name of the intent. Utterances are stored line by line in the ```<intent>.utterances.txt``` file. Entities are marked with ```[<value>](<entity-name>)```.
+
+E. g.: ```Ich war im Review und [habe danach](message_done) eine Veranstaltung [vorbereitet](message_done)```
+
+It's recommended to use the Botpress UI to edit intents and utterances but especially for bulk editing, you could work with the explained text files.
+
+Make sure to retrain (sync) your RASA model via the respective button in the UI after editing to apply your changes.
 
 # Other stuff
 

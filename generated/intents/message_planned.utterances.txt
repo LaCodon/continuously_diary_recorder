@@ -1,3 +1,4 @@
+Ich möchte morgen mit dem Bot [fertig werden](message_planned)
 ich [muss noch](message_planned)
 ich [will noch](message_planned)
 [heute will ich noch](message_planned)

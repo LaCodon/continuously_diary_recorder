@@ -124,7 +124,7 @@ async function setStateVariable(state, event, { name, value }) {
 }
 
 /**
- * Output current state or given var
+ * Output current state and nlu infor or given obj if not null
  * @param {string} params.obj The var to be printed
  */
 async function debug(state, event, { obj }) {
@@ -154,4 +154,14 @@ async function getTypeByEntity(state, event, { }) {
   }
 }
 
-module.exports = { stageMessage, setStateVariable, getUserDiary, markdownDiary, debug, getTypeByEntity, getKvsKey, getEmptyUserObj, getKnownUsers, deleteDiary }
+/**
+ * Send message as log to console
+ * @param {string} params.message The messsage to be printed
+ */
+async function mockSendMessage(state, event, { message }) {
+  const recipient = event.user.username || event.user.id
+
+  console.log("[mockSendMessage] TO:", recipient, "MESSAGE:", message)
+}
+
+module.exports = { stageMessage, setStateVariable, getUserDiary, markdownDiary, debug, getTypeByEntity, getKvsKey, getEmptyUserObj, getKnownUsers, deleteDiary, mockSendMessage }

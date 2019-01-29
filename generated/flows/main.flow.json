@@ -21,7 +21,7 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-NDU1D3",
+        "mockSendMessage {\"message\":\"none\"}",
         "setStateVariable {\"name\":\"type\",\"value\":\"message_none\"}"
       ],
       "onReceive": null
@@ -65,7 +65,7 @@
       "onEnter": [
         "getUserDiary {}",
         "markdownDiary {}",
-        "say #!builtin_text-GjV1Kd"
+        "mockSendMessage {\"message\":\"Dein Tagebuch sieht bis jetzt so aus: {{state.rendered}}\"}"
       ],
       "onReceive": null
     },
@@ -79,7 +79,7 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-liN_7H"
+        "mockSendMessage {\"message\":\"{{state.type}}\"}"
       ],
       "onReceive": null
     },

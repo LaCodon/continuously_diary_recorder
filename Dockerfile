@@ -13,4 +13,4 @@ ENV BOTPRESS_PORT=4000 \
 WORKDIR /root/continuously_diary_recorder
 COPY . /root/continuously_diary_recorder
 RUN yarn install
-CMD  ["yarn", "start"]
+ENTRYPOINT ["./entrypoint.sh"]

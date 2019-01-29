@@ -12,20 +12,6 @@
   "startNode": "confidence_checker",
   "nodes": [
     {
-      "id": "a4b4c1f87e",
-      "name": "got_availability",
-      "next": [
-        {
-          "condition": "true",
-          "node": "check_entity"
-        }
-      ],
-      "onEnter": [
-        "setStateVariable {\"name\":\"type\",\"value\":\"message_availability\"}"
-      ],
-      "onReceive": null
-    },
-    {
       "id": "51ced9ad4e",
       "name": "none",
       "next": [
@@ -59,22 +45,8 @@
       "onReceive": null
     },
     {
-      "id": "fa72255c31",
-      "name": "got_planned",
-      "next": [
-        {
-          "condition": "true",
-          "node": "check_entity"
-        }
-      ],
-      "onEnter": [
-        "setStateVariable {\"name\":\"type\",\"value\":\"message_planned\"}"
-      ],
-      "onReceive": null
-    },
-    {
       "id": "33ce46b367",
-      "name": "got_done",
+      "name": "set_intent",
       "next": [
         {
           "condition": "true",
@@ -82,7 +54,7 @@
         }
       ],
       "onEnter": [
-        "setStateVariable {\"name\":\"type\",\"value\":\"message_done\"}"
+        "setStateVariable {\"name\":\"type\",\"value\":\"{{event.nlu.intent.name}}\"}"
       ],
       "onReceive": null
     },
@@ -117,19 +89,19 @@
       "next": [
         {
           "condition": "event.nlu.intent.name === 'message_availability'",
-          "node": "got_availability"
+          "node": "set_intent"
         },
         {
           "condition": "event.nlu.intent.name === 'message_blocked'",
-          "node": "got_blocked"
+          "node": "set_intent"
         },
         {
           "condition": "event.nlu.intent.name === 'message_planned'",
-          "node": "got_planned"
+          "node": "set_intent"
         },
         {
           "condition": "event.nlu.intent.name === 'message_done'",
-          "node": "got_done"
+          "node": "set_intent"
         },
         {
           "condition": "event.nlu.intent.name === 'want_diary'",
@@ -172,25 +144,11 @@
       "onReceive": null
     },
     {
-      "id": "39f5d4fdcc",
-      "name": "got_blocked",
-      "next": [
-        {
-          "condition": "true",
-          "node": "check_entity"
-        }
-      ],
-      "onEnter": [
-        "setStateVariable {\"name\":\"type\",\"value\":\"message_blocked\"}"
-      ],
-      "onReceive": null
-    },
-    {
       "id": "9a368c31ec",
       "name": "check_entity",
       "next": [
         {
-          "condition": "event.nlu.entities.length > 0 && event.nlu.intent.confidence < 0.9",
+          "condition": "event.nlu.entities.length > 0",
           "node": "got_entity"
         },
         {

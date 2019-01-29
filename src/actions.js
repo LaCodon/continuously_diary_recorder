@@ -72,15 +72,26 @@ function getKvsKey(userId) {
 async function getKnownUsers(bp) {
   const knex = await bp.db.get()
   const ids = await knex('kvs').select('key').where('key', 'like', `%${getKvsKey()}%`)
-    .then(res => {
+    .then(async res => {
       let ids = [];
       for (let i = 0; i < res.length; i++) {
         let id = res[i].key.replace(getKvsKey(), '')
-        ids.push(id)
+        const name = await getUsername(bp, id)
+        ids.push({
+          id: id,
+          name: name
+        })
       }
       return ids
     })
   return ids
+}
+
+async function getUsername(bp, userId) {
+  const knex = await bp.db.get()
+  const name = await knex('users').select('first_name').where('userId', userId).limit(1)
+    .then(res => res[0].first_name)
+  return name
 }
 
 function getEmptyUserObj() {

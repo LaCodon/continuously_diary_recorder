@@ -39,9 +39,17 @@ Run `yarn install` to install the bot.
 
 ## Run the bot
 
-The easiest way to run the bot is by executing ```./run.sh``` in the root folder. It will set some env vars for you. Make sure to adapt the run script according to your needs.
+The easiest way to run the bot in development is by executing ```./run-dev.sh``` in the root folder. It will set some env vars for you. Make sure to adapt the run script according to your needs.
 
 After the first start you have to train the NLU once via the Botpress GUI (default on localhost:4000). Goto NLU > Sync Model. Then restart the bot.
+
+## Docker
+
+Build the container image: ```docker build -t classifier-bot:latest .```
+
+Run the image: ```docker run --rm -p 4000:4000 -e ROCKETCHAT_URL=http://10.0.2.15:3001 -e NLU_RASA_URL=http://10.0.2.15:5000 classifier-bot:latest```
+
+You should adapt all environment variables to meet your requirements. For all available environment variables, have a look into the ```run-dev.sh``` script.
 
 ## API
 

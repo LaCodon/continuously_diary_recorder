@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 echo "Running Botpress and sync watcher"
 

@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 if [ -z "$BOTPRESS_PORT" ]; then
 	echo "trigger-sync.sh: env var BOTPRESS_PORT has to be set, aborted.";

@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Port for the Botpress GUI
 export BOTPRESS_PORT=4000

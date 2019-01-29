@@ -61,3 +61,7 @@ The Bot offers an API to get the collected data:
 # Getting started with Botpress
 
 The best explanation for Botpress can be found on [their website](https://botpress.io/docs/10.50/getting_started/trivia_flows/).
+
+# Other stuff
+
+Kudos to https://github.com/vishnubob/wait-for-it

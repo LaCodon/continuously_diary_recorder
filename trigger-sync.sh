@@ -8,7 +8,7 @@ fi
 curl http://localhost:${BOTPRESS_PORT}/api/botpress-nlu/sync
 
 if [ $? -eq "0" ]; then
-	echo " -> The NLU has just been synced for you. The bot should now be fully functional.";
+	echo " -> The NLU has just been synced for you. The bot should now be fully functional if you don't see any error messages.";
 else
 	echo " -> FAILED to auto sync the NLU. THE BOT MIGHT NOT BE FUNCTIONAL!";
 	exit 1;

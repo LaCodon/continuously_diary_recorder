@@ -1,4 +1,6 @@
 **/node_modules
 .git
 .data/db.sqlite
+helm-chart
+gotools
 run.sh

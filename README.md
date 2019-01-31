@@ -53,6 +53,8 @@ You should adapt all environment variables to meet your requirements. For all av
 
 The container will automatically train your RASA model on startup. You should think about mounting the ```/generated/intents/``` directory to your host system to persist changes in your traingset.
 
+**Important:** The Bot uses Sqlite as a storage backend. The database file will be located in ```/.data/```. Consider mountig this directory as persistent docker volume. If you want to use postgres instead of sqlite, have a look at https://botpress.io/docs/10.50/recipes/dbs/
+
 ## API
 
 The Bot offers an API to get the collected data:

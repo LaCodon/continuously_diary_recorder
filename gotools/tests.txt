@@ -1,0 +1,124 @@
+message_availability:@maintal
+message_availability:Arbeite von zu Hause und bin bis max. 13:30 Uhr erreichbar
+message_availability:Bin auf dem Weg, wenn alles klappt, komme ich um 9:00 Uhr im Office an
+message_availability:Bin morgen/heute normal da, ab 13:00 Uhr ist KiCom
+message_availability:Büro Mahlsdorf
+message_planned:Direktlink zur Beantwortung von Fragen auswerten
+message_availability:Erfurt Schlachthof
+message_availability:Home Office
+message_availability:Im Büro, 8:00 bis 13:00
+message_availability:In ca. 3 Wochen wieder im Turm
+message_availability:Morgens Zahnarzt, ab Mittag: Silberturm
+message_availability:Silberturm
+message_availability:Silberturm, nicht im Daily, verfügbar ab 14:00
+message_availability:Turm
+message_availability:Unterwegs / Turm
+message_availability:Wie es aussieht morgen im HO
+message_availability:bin morgen zu Hause
+message_availability:ich bin heute nachmittag weg
+message_availability:ich bin im ho
+message_availability:ich bin morgen den ganzen Tag im Büro
+message_availability:ich bin morgen nicht da
+message_availability:im Büro
+message_availability:im Internet
+message_availability:im Siblerturm
+message_planned:letztes Script zur Auswertung von Feedback fertigstellen
+message_availability:morgen bin ich den ganzen Tag im Büro
+message_availability:normal im Home Office
+message_availability:zwischen 10-12 verschiedene Kleinigkeiten (Telko rAPIdo, Vorbereitung Transformers 4.0 Termin nä. Woche)
+message_blocked:Hilfe beim Ziehen von Docker Images aus private Repos
+message_blocked:Joachim muss mir dabei helfen
+message_blocked:hänge an Keel
+message_blocked:ich brauche Hilfe beim finden eines Themas für meine Bachelorarbeit
+message_blocked:ich brauche bei RASA noch unbedingt hilfe von einem Kollegen
+message_blocked:ich brauche jemanden, der mir beim Frisieren hilft
+message_blocked:ich weiß nicht, wie ich weiter machen soll
+message_blocked:kann nicht mit docker lokal bauen (Artifactory Konfig)
+message_blocked:komme beim CI/CD nicht weiter
+message_blocked:komme nicht weiter beim CI/CD 
+message_done:Akquisetermin für KD DB Regio wahrgenommen
+message_done:Anruf von Berlin wg. Live-Chat
+message_done:Beim Telefonieren, mein Handy ist in der Webex stumm :(
+message_done:Bot gespielt
+message_done:Bugfix Release für LiveChat zusammen mit Vignesh
+message_planned:Chatpal auf allen Mandanten aktivieren
+message_done:Chatpal auf allen Mandanten einschalten, offen sind hier noch die “Mittelgroßen”: dsr, business-hub, zod, decs. Aktuell treten immer wieder (offenbar Netzwerk-)Fehler im Log auf, die Indizierung läuft aber weiter… das müssen wir noch weiter untersuchen
+message_done:Chatpal beim SEEC funktioniert auch wieder
+message_done:Conversatinal Design Tagebuch zusammen fortgeschrieben
+message_done:DB Search Release Solr 7.5 auf Team Chat getestet (Release der DB Search macht keine Probleme)
+message_planned:Einladen für einen Update-Termin mit Jan, Oliver und Jan
+message_done:Ergebnisse im Wiki dokumentiert
+message_done:Erledigt: Docke rimage gebaut
+message_done:Erste Probedurchläufe mit Jan und dem Bot
+message_done:GF-Bericht finalisiert und versendet
+message_done:Habe gerade erledigt: Docker image einrichten
+message_done:Ich hab RASA zum laufen gebracht und ein bisschen damit rumgespielt
+message_done:Ich war heute in der Kleyerstraße und habe meinen nächsten Einsatz besprochen
+message_planned:In aktuelles Rocket.Chat reingucken, um rauszufinden, was da mit Rich Text Attachments so geht
+message_done:Kommentare mit offenen Fragestellungen an die Wiki-Seiten
+message_done:MSZ (Benjamin) Support Anfrage, wg. LiveChats geholfen
+message_done:MSZ Kommunikation wg. Display Username
+message_done:Nachmittags Barcamp Vorbereitung und Mindchange
+message_done:Neu Live chat release gemacht.
+message_done:Pläne für die Weltherrschaft im Internet geschmiedet
+message_done:Problem mit Mehrfachanzeige der Chats bei der MSZ ist behoben
+message_done:Retro und Planning mit dem Team
+message_done:Räume gebucht und Einladung Jahresretro versendet
+message_done:SSH Zugriff auf die PU erfolgreich getestet
+message_planned:Smarti Problem weiter analysieren
+message_done:Smarti Synchronisation beim SEEC erfolgreich ausgeführt
+message_planned:Smarti auf PU wieder aktivieren
+message_done:Support-Anfragen bearbeitet
+message_done:Vormittags Assistify
+message_done:Vorstellung Assistify auf der RPA Community abgesagt
+message_done:Welche Inhalte soll das Tagebuch erheben?
+message_planned:Wir machen heute Filme
+message_done:außerdem habe ich Mails an Leute geschrieben wegen einer potentiellen Übernahme und meiner Thesis
+message_done:bin fertig mit Docker image
+message_planned:danach: Weiter am Antworten-Sende-Service
+message_done:des Weitere habe ich Versucht, RASA beizubringen mich zu verstehen
+message_done:ersucht, den Livechat-Refrehs-on-Agent-join-Bug zu fixen - bislang erfolglos
+message_done:heute war ich mit aufgaben beschäftigt
+message_done:ich hab heute was im wiki dokumentiert
+message_done:ich habe heute die Textverbesserungen von Oliver umgesetzt
+message_done:ich habe heute mit RASA rumgespielt und getestet, ob das mit Botpress funktioniert
+message_done:morgens: Termin mit rAPIdo
+message_planned:Anlegen von Usern über operations
+message_planned:Auf’s Board gucken
+message_planned:Bot Tagebuch fuer decs und uns machen
+message_planned:Bot spielen
+message_planned:Bot weiterspielen und Tagebuch erstellen
+message_planned:Business Case Termin
+message_planned:Diary Bot
+message_done:Diverse Anfragen beantwortet
+message_planned:Ein verdammtes Team für das Tagebuch begeistern
+message_done:Erledigt: Docker image gebaut
+message_done:Erste Textbausteine für den Smarti Bot und den Daily Bot erstellt
+message_planned:Feeback-Möglichkeit in den Antworten ergänzen
+message_availability:HO
+message_planned:Ich werde weiterhin die Textbausteine anpassen und ggf. mit Jan weiter proben
+message_planned:MSZ WB wieder ans Laufen bringen
+message_planned:Mittagessen mit Tom Winter wg. MT
+message_planned:Noch nicht geplannt.
+message_planned:Ich treff mich heute mit den Leuten vom SEEC
+none:Planning
+none:Retro
+none:Retro + Planning
+none:Retro / Planning
+none:Service zum Senden von Antworten
+message_planned:Team-Sync / Nächste Schritte besprechen
+message_planned:Thomas in die Lage versetzen, operations zu nutzen, um Webhooks auszurollen
+message_planned:Urlaub machen
+message_planned:Was spassiges
+message_planned:Webhooks von Thomas einrichten
+message_planned:Weihnachts-Mail formulieren
+message_planned:Weihnachtsevent weiter planen
+message_planned:Wieso fragst Du nur einmal am Tag?
+message_planned:außerdem morgen den Schluss für meine Arbeit schreiben
+message_planned:außerdem will ich noch mehr Studenten anwerben
+message_planned:ich muss morgen endlich meinen Schluss schreiben
+message_planned:jetzt will ich noch bessere Trainingsdaten für RASA erzeugen, um die Trefferquote deutlich zu erhöhen
+message_planned:morgen will ich Urlaub machen
+message_planned:muss noch jemanden umbringen
+message_planned:werde morgen das Deployment hin bekommen - hoffentlich
+message_planned:wir wollen morgen - ins Kino gehen - ins Kino gehen
